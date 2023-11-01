@@ -1,0 +1,87 @@
+/* seletor de tags */
+h1 {
+	background-color: blue;
+	color: greenyellow;
+}
+
+p {
+	font-weight: 900;
+}
+
+/* seletor por id: identificador único que não pode se repetir */
+#form {
+	border: 3px dashed red;
+	width: fit-content;
+	padding: 20px;
+	margin: 10px;
+}
+
+#input {
+	padding: 5px;
+	background-color: yellow;
+	border: 2px solid blue;
+}
+
+#button {
+	font-size: 20px;
+	font-family: 'Times New Roman', Times, serif;
+	border-radius: 10px;
+	border: none;
+	background-color: grey;
+	padding: 10px;
+}
+
+/*  seletor de classes: identificador que pode se repetir nas tags */
+.container {
+	padding: 10px;
+	border: 1px solid;
+	border-radius: 10px;
+	max-width: fit-content;
+	text-transform: uppercase;
+}
+
+/* seletor universal */
+* {
+	font-size: x-large;
+}
+
+/* seletores de atributos */
+[title='lorem'] {
+	color: red;
+}
+
+[title='quam'] {
+	color: peru;
+}
+
+[title='eius'] {
+	color: green;
+}
+
+/* estiliza todas as ocorrências da palavra passada como parâmetro */
+[title~='especial'] {
+	background-color: yellow;
+}
+
+/* estiliza todas as ocorrências da palavra passada como parâmetro e também
+as que são seguidas de um hifen */
+[title|='especial'] {
+	background-color: purple;
+}
+
+/* prefixo */
+[href^="https://"]
+{
+	font-size: xx-large;
+}
+
+/* infixo */
+[href*='login'] {
+	font-weight: 900;
+}
+
+/* sufixo */
+[href$='https://']
+{
+	padding-bottom: 20px;
+}

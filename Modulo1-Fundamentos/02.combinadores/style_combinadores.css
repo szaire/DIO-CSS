@@ -1,0 +1,43 @@
+/* Agrupamento de Seletores */
+h1,
+p {
+	color: red;
+}
+
+.texto,
+.titulo {
+	background-color: coral;
+}
+
+.texto.titulo {
+	background-color: purple;
+	color: green;
+}
+
+a.texto {
+	font-size: 40px;
+}
+
+/* Combinadores */
+/* Combinador Descendente */
+ul {
+	color: blue;
+}
+
+li li {
+	color: green;
+}
+
+li div {
+	color: red;
+}
+
+.fundo-verde li {
+	background-color: lightgreen;
+}
+
+.fundo-azul li {
+	background-color: lightblue;
+}
+
+/* Combinador filho */
